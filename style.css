@@ -1,0 +1,202 @@
+.nav {
+	font-family: 'Gabriela';
+	font-size: 8px;
+}
+
+.hi {
+	font-family: 'Gabriela';
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.nav-link-github {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+	background-color: #48bdf9;
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+    position: relative;    
+}
+
+.jumbotron .container {
+    position: relative;
+}
+
+
+/* info panel */
+.info-panel {
+    margin-top: -200px;
+    margin-left: 20px;
+}
+
+.info-panel img{
+    width: 100px;
+    height: 150px;
+    margin-left: -10px;	   
+}
+
+/* utility */
+.downloadcv {
+	margin-top: 90px;
+	margin-left: 140px;	   
+	font-size: 9px;
+	background-color: #0332ff;
+	color: #ffffff;
+	width: 90px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.info-panel p.profesi {
+	font-size: 11px;
+	font-weight: 200px;
+	margin-left: 100px;	    
+	margin-top: 30px;	    
+}
+
+.info-panel p.github {
+	font-size: 10px;
+	font-weight: 200px;
+	margin-left: 100px;	    
+	margin-top: -10px;	    
+}
+
+.info-panel p.motto {
+	font-family: 'Sacramento', cursive;
+	font-size: 24px;	    
+	font-weight: 200px;
+	margin-top: 200px;
+	color: #000000;
+	border-radius: 0px;
+}
+
+@media (min-width: 768px) { 
+
+	/* utility */
+	.downloadcv {
+		margin-top: 90px;
+		margin-left: 175px;	   
+		font-size: 9px;
+		background-color: #0332ff;
+		color: #ffffff;
+		width: 90px;
+		border-radius: 5px;
+		z-index: 1;
+	}
+
+}
+
+
+@media (min-width: 992px) {
+
+	.nav {
+		font-family: 'Gabriela';
+		font-size: 14px;
+	}
+
+	.hi {
+		font-family: 'Gabriela';
+		font-size: 32px;
+	}
+
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+        margin-right: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .nav-link-github {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+        position: relative;
+        z-index: 1;
+    }
+
+    .hi {
+        color: white !important;
+        /* text-shadow: 1px 1px 1px rgba(0,0,0,0.7);    	*/
+        margin-top: 50px;
+    	position: relative;
+    	z-index: 1;
+    }
+
+    .jumbotron{
+        margin-top: -150px;
+        height: 350px;
+    }
+
+	/* info panel */
+	.info-panel {
+	    margin-top: -175px;
+	    margin-left: 400px;
+	    color: #ffffff;
+	    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+
+	.info-panel img{
+	    width: 150px;
+	    height: 210px;
+	    border-radius: 10px;
+	}
+
+	.info-panel h4 {
+	    font-display: 16px;
+	    text-transform: uppercase;
+	    font-weight: bold;
+	    margin-top: 5px;
+	}
+
+	.info-panel p.profesi {
+	    font-size: 14px;
+	    margin-left: 175px;	    
+	    margin-top: 75px;	    
+	}
+
+	.info-panel p.github {
+	    font-size: 14px;
+	    margin-left: 175px;	    
+	    margin-top: -10px;	    
+	}
+
+	.info-panel p.motto {
+		font-family: 'Sacramento', cursive;
+	    font-size: 48px;	    
+	    font-weight: 200px;
+	    margin-top: 200px;
+	    color: #000000;
+	    border-radius: 0px;
+	}
+
+
+	/* utility */
+	.downloadcv {
+	    margin-top: 300px;
+	    margin-left: 470px;	    
+	    font-size: 12px;
+	    background-color: #0332ff;
+	    width: 125px;
+	    border-radius: 5px;
+	    z-index: 1;
+	}
+
+	/* info menu */
+	.info-menu p.menu {	    
+	    margin-left: 200px;
+	    font-size: 10px;
+	}
+
+	p.footer {
+		font-size: 12px;
+	}
+
+}

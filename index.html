@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" ng-app="personalSite">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gabriela|Roboto|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="   sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- script src="js/angular.min.js"></script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+
+</head>
+<body>
+
+    <div class="nav justify-content-center hi">
+        Hi, thank you for visiting me
+    </div>
+
+    <!-- Menu Nav -->
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#/"><i class="fas fa-home">&nbsp;&nbsp;Home</i></a>
+      </li>        
+      <li class="nav-item">
+        <a class="nav-link" href="#/gears"><i class="fas fa-cogs">&nbsp;&nbsp;My Gears</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#/portfolio"><i class="fas fa-address-book">&nbsp;&nbsp;Portfolio</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#/contact"><i class="fas fa-pencil-alt">&nbsp;&nbsp;Contact</i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#/template"><i class="fas fa-toolbox">&nbsp;&nbsp;My Template</i></a>
+      </li>
+    </ul>
+    <!-- end of menu nav -->
+
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <a class="nav-link downloadcv" href="CV_2018.pdf" target="_new">Download CV</a>      
+        </div>
+    </div>
+    <!-- end of jumbotron -->
+
+
+    <!-- containter -->
+    <div class="container">
+        <div class = "row justify-content-center">
+            <div class="col-10 info-panel">
+                <div class="row">
+                  <div class="col-lg">
+                    <img src="img/photo.jpg" alt="employee" class="float-left">
+                    <p class="profesi">Web / Mobile Developer</p>
+                    <p class="github"><a class="nav-link-github" href="https://github.com/agssuryanto" target="_new"><i class="fab fa-github-square">&nbsp;&nbsp;https://github.com/agssuryanto</i></a></p>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div content-title></div>
+    <div ng-view></div>
+
+    <nav class="navbar fixed-bottom navbar-light justify-content-center">
+      <p class="footer">This website built with angularJS. Go to Template to download</p>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        
+        var appSite = angular.module('personalSite', ['ngRoute']);
+
+        appSite.config(['$routeProvider', function($routeProvider){
+
+            $routeProvider
+                .when('/gears', {
+                    templateUrl : 'grears.html'
+                })
+                .when('/portfolio', {
+                    templateUrl : 'portfolio.html'
+                })
+                .when('/contact', {
+                    templateUrl : 'contact.html'
+                })
+                .when('/', {
+                    templateUrl : 'home.html'
+                })
+
+        }]);
+
+    </script>
+</body>
+</html>
